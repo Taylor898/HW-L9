@@ -1,8 +1,12 @@
-﻿int SumNumbers(int M, int N)
+﻿// Задайте значения M и N. Напишите программу, 
+// которая найдёт сумму натуральных элементов в промежутке от M до N.
+// Выполнить с помощью рекурсии.
+
+int SumNumbers(int M, int N)
 {
     if (M > N)
     {
-        return N + SumNumbers(M, N + 1);;
+        return N + SumNumbers(M, N + 1);
     }
 
     else if(M == N) return 0;

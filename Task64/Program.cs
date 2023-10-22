@@ -1,4 +1,9 @@
-﻿Console.WriteLine("Введите натуральное число: ");
+﻿//  Задайте значение N. Напишите программу,
+//  которая выведет все натуральные числа в промежутке от N до 1. 
+//  Выполнить с помощью рекурсии.
+
+
+Console.WriteLine("Введите натуральное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 if(number < 1)
@@ -12,6 +17,7 @@ NatNumber(number);
 void NatNumber(int num)
 {
     if(num == 0) return;
-     Console.Write($"{num} ");
+    else if(num == 1) Console.Write("1");
+    else Console.Write($"{num}, ");
     NatNumber(num - 1);
 }
