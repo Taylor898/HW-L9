@@ -9,7 +9,7 @@ int SumNumbers(int M, int N)
         return N + SumNumbers(M, N + 1);
     }
 
-    else if(M == N) return 0;
+    else if(M == N) return M;
 
     else return M + SumNumbers(M + 1, N);
 }
